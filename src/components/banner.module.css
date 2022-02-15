@@ -1,0 +1,74 @@
+.container {
+  flex: 0 0 auto;
+  width: 100%;
+  display: flex;
+  padding: var(--dl-space-space-doubleunit);
+  z-index: 100;
+  flex-wrap: wrap;
+  max-width: 1110px;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.container1 {
+  flex: 1;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.text1 {
+  white-space: pre-wrap;
+}
+.text2 {
+  max-width: 500px;
+}
+.text3 {
+  white-space: pre-wrap;
+}
+.text4 {
+  max-width: 400px;
+  margin-top: var(--dl-space-space-doubleunit);
+  margin-bottom: var(--dl-space-space-halfunit);
+}
+.text5 {
+  white-space: pre-wrap;
+}
+.container2 {
+  width: 520px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.image {
+  top: -100px;
+  left: auto;
+  right: var(--dl-space-space-doubleunit);
+  width: 232px;
+  bottom: auto;
+  position: absolute;
+  object-fit: cover;
+}
+.image1 {
+  top: auto;
+  left: var(--dl-space-space-doubleunit);
+  right: auto;
+  width: 232px;
+  bottom: -100px;
+  position: absolute;
+  object-fit: cover;
+}
+
+@media(max-width: 991px) {
+  .container2 {
+    display: none;
+  }
+}
+@media(max-width: 767px) {
+  .text {
+    font-size: 40px;
+  }
+}
